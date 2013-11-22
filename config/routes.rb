@@ -7,6 +7,8 @@ CcForRent::Application.routes.draw do
 
   root to: "ccjobs#index"
 
+  get 'assign/:id', to: 'AssignedWorks#assign'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

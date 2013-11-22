@@ -10,6 +10,15 @@ class AssignedWorksController < ApplicationController
     end
   end
 
+  def assign
+    pc_owner = PcOwner.find(params[:id])
+
+    work = AssignedWork.unassigned_work.first
+    work.update_attribute(:pc_owner_id, pc_owner.id)
+
+    render json: work
+  end
+
   # GET /assigned_works/1
   # GET /assigned_works/1.json
   def show
