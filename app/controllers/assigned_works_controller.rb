@@ -19,6 +19,13 @@ class AssignedWorksController < ApplicationController
     render json: work
   end
 
+  def update_info
+    @assigned_work = AssignedWork.find(params[:id])
+    @assigned_work.update_attribute(status: params[:status], progress: params[:progress])
+
+    render json: @assigned_work
+  end
+
   # GET /assigned_works/1
   # GET /assigned_works/1.json
   def show
