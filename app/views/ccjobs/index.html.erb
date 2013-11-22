@@ -1,0 +1,31 @@
+<h1>Listing ccjobs</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Job file url</th>
+    <th>Input bucket url</th>
+    <th>Output bucket url</th>
+    <th>Status</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @ccjobs.each do |ccjob| %>
+  <tr>
+    <td><%= ccjob.name %></td>
+    <td><%= ccjob.job_file_url %></td>
+    <td><%= ccjob.input_bucket_url %></td>
+    <td><%= ccjob.output_bucket_url %></td>
+    <td><%= ccjob.status %></td>
+    <td><%= link_to 'Show', ccjob %></td>
+    <td><%= link_to 'Edit', edit_ccjob_path(ccjob) %></td>
+    <td><%= link_to 'Destroy', ccjob, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Ccjob', new_ccjob_path %>

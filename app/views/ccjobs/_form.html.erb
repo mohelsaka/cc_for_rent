@@ -1,0 +1,37 @@
+<%= form_for(@ccjob) do |f| %>
+  <% if @ccjob.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@ccjob.errors.count, "error") %> prohibited this ccjob from being saved:</h2>
+
+      <ul>
+      <% @ccjob.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :job_file_url %><br />
+    <%= f.text_field :job_file_url %>
+  </div>
+  <div class="field">
+    <%= f.label :input_bucket_url %><br />
+    <%= f.text_field :input_bucket_url %>
+  </div>
+  <div class="field">
+    <%= f.label :output_bucket_url %><br />
+    <%= f.text_field :output_bucket_url %>
+  </div>
+  <div class="field">
+    <%= f.label :status %><br />
+    <%= f.text_field :status %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

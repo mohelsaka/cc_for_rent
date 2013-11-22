@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @ccjob.name %>
+</p>
+
+<p>
+  <b>Job file url:</b>
+  <%= @ccjob.job_file_url %>
+</p>
+
+<p>
+  <b>Input bucket url:</b>
+  <%= @ccjob.input_bucket_url %>
+</p>
+
+<p>
+  <b>Output bucket url:</b>
+  <%= @ccjob.output_bucket_url %>
+</p>
+
+<p>
+  <b>Status:</b>
+  <%= @ccjob.status %>
+</p>
+
+
+<%= link_to 'Edit', edit_ccjob_path(@ccjob) %> |
+<%= link_to 'Back', ccjobs_path %>
