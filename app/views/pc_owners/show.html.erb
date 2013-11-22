@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @pc_owner.name %>
+</p>
+
+<p>
+  <b>Ip:</b>
+  <%= @pc_owner.ip %>
+</p>
+
+<p>
+  <b>Revenu:</b>
+  <%= @pc_owner.revenu %>
+</p>
+
+
+<%= link_to 'Edit', edit_pc_owner_path(@pc_owner) %> |
+<%= link_to 'Back', pc_owners_path %>

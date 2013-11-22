@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  ccjob_id: 1
+  pc_owner_id: 1
+  input_portion: MyString
+  string: 
+  progress: 1
+
+two:
+  ccjob_id: 1
+  pc_owner_id: 1
+  input_portion: MyString
+  string: 
+  progress: 1

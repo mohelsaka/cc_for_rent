@@ -1,0 +1,27 @@
+<h1>Listing pc_owners</h1>
+
+<table class="table table-bordered table-striped">
+  <tr>
+    <th>Name</th>
+    <th>Ip</th>
+    <th>Revenu</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @pc_owners.each do |pc_owner| %>
+  <tr>
+    <td><%= pc_owner.name %></td>
+    <td><%= pc_owner.ip %></td>
+    <td><%= pc_owner.revenu %></td>
+    <td><%= link_to 'Show', pc_owner %></td>
+    <td><%= link_to 'Edit', edit_pc_owner_path(pc_owner) %></td>
+    <td><%= link_to 'Destroy', pc_owner, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Pc owner', new_pc_owner_path %>

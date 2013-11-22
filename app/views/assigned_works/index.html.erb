@@ -1,0 +1,31 @@
+<h1>Listing assigned_works</h1>
+
+<table class="table table-bordered table-striped">
+  <tr>
+    <th>Ccjob</th>
+    <th>Pc owner</th>
+    <th>Input portion</th>
+    <th>Status</th>
+    <th>Progress</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @assigned_works.each do |assigned_work| %>
+  <tr>
+    <td><%= assigned_work.ccjob_id %></td>
+    <td><%= assigned_work.pc_owner_id %></td>
+    <td><%= assigned_work.input_portion %></td>
+    <td><%= assigned_work.status %></td>
+    <td><%= assigned_work.progress %></td>
+    <td><%= link_to 'Show', assigned_work %></td>
+    <td><%= link_to 'Edit', edit_assigned_work_path(assigned_work) %></td>
+    <td><%= link_to 'Destroy', assigned_work, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Assigned work', new_assigned_work_path %>

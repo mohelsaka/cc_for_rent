@@ -11,6 +11,34 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 0) do
+ActiveRecord::Schema.define(:version => 20131122124749) do
+
+  create_table "assigned_works", :force => true do |t|
+    t.integer  "ccjob_id"
+    t.integer  "pc_owner_id"
+    t.string   "input_portion"
+    t.string   "status"
+    t.integer  "progress"
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
+  end
+
+  create_table "ccjobs", :force => true do |t|
+    t.string   "name"
+    t.string   "job_file_url"
+    t.string   "input_bucket_url"
+    t.string   "output_bucket_url"
+    t.string   "status"
+    t.datetime "created_at",        :null => false
+    t.datetime "updated_at",        :null => false
+  end
+
+  create_table "pc_owners", :force => true do |t|
+    t.string   "name"
+    t.string   "ip"
+    t.integer  "revenu"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
 end

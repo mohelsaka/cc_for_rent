@@ -1,4 +1,8 @@
 CcForRent::Application.routes.draw do
+  resources :assigned_works
+
+  resources :pc_owners
+
   resources :ccjobs
 
   root to: "ccjobs#index"

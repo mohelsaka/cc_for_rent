@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Ccjob:</b>
+  <%= @assigned_work.ccjob_id %>
+</p>
+
+<p>
+  <b>Pc owner:</b>
+  <%= @assigned_work.pc_owner_id %>
+</p>
+
+<p>
+  <b>Input portion:</b>
+  <%= @assigned_work.input_portion %>
+</p>
+
+<p>
+  <b>Status:</b>
+  <%= @assigned_work.status %>
+</p>
+
+<p>
+  <b>Progress:</b>
+  <%= @assigned_work.progress %>
+</p>
+
+
+<%= link_to 'Edit', edit_assigned_work_path(@assigned_work) %> |
+<%= link_to 'Back', assigned_works_path %>
