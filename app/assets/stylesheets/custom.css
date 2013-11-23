@@ -8,7 +8,7 @@
 	box-shadow: 10px 14px 1px #0B381F;
 }
 body{
-	background-color: #2195E2;
+	background-color: #3381B4 !important;
 }
 table{
 	color: #000;
@@ -52,11 +52,11 @@ tbody{
 	margin: 0;
 	box-shadow: none;
 	border: none;
-	height: 606px;
+	height: 376px;
 	/*background: url(../img/bg.png) repeat 0% 0%;*/
 }
 .da-dots{
-	bottom: 58px;
+	bottom: 0px;
 }
 /*progress::-webkit-progress-bar{
 
