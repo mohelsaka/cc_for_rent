@@ -8,13 +8,19 @@
 	box-shadow: 10px 14px 1px #0B381F;
 }
 body{
-	background-color: #1b846f;
+	background-color: #2195E2;
 }
 table{
-	color: #fff;
+	color: #000;
 }
 tr:hover{
 	color: #000;
+}
+.table-header{
+	font-weight: bold;
+}
+tbody{
+	font-size: 15px;
 }
 .prog{
 	margin-top: 43px;
@@ -23,7 +29,7 @@ tr:hover{
 .table-wrapper{
 	margin-top: 28px !important;
 	padding: 5px;
-	background-color: #2BA78D;
+	background-color: #F8F08C;
 	box-shadow: 6px 8px 1px #0B381F;
 }
 .prog h3,.task-percentage h2,.jobs-caption{
@@ -42,6 +48,16 @@ tr:hover{
 	margin-top: 22px;
 }
 
+.da-slider{
+	margin: 0;
+	box-shadow: none;
+	border: none;
+	height: 606px;
+	/*background: url(../img/bg.png) repeat 0% 0%;*/
+}
+.da-dots{
+	bottom: 58px;
+}
 /*progress::-webkit-progress-bar{
 
 	background-color: #fff;

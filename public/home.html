@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <head>
+  <link rel="stylesheet" type="text/css" href="../app/assets/stylesheets/demo.css">
+  <link rel="stylesheet" type="text/css" href="../app/assets/stylesheets/style2.css">
   <link rel="stylesheet" type="text/css" href="../app/assets/stylesheets/bootstrap.css">
   <link rel="stylesheet" type="text/css" href="../app/assets/stylesheets/bootstrap-responsive.css">
   <link rel="stylesheet" type="text/css" href="../app/assets/stylesheets/custom.css">
   <script type="text/javascript" src="../app/assets/javascripts/jquery-1.9.0.js"></script>
   <script type="text/javascript" src="../app/assets/javascripts/bootstrap.js"></script>
   <script type="text/javascript" src="../app/assets/javascripts/custom.js"></script>
+  <script type="text/javascript" src="../app/assets/javascripts/modernizr.custom.28468.js"></script>
+  <script type="text/javascript" src="../app/assets/javascripts/jquery.cslider.js"></script>
   <title>CC4Rent</title>
 </head>
 <body>
@@ -50,51 +54,47 @@
         </div>
       </div>
     </div>
+    <!-- slider -->
+<div id="da-slider" class="da-slider">
+        <div class="da-slide">
+          <h2>CC 4 Rent</h2>
+          <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+          <div class="da-img"><img src="../app/assets/images/1.png" alt="image01" /></div>
+        </div>
+        <div class="da-slide">
+          <h2>Revolution</h2>
+          <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+          <div class="da-img"><img src="../app/assets/images/3.png" alt="image01" /></div>
+        </div>
+        <div class="da-slide">
+          <h2>Warm welcome</h2>
+          <p>When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane.</p>
+          <div class="da-img"><img src="../app/assets/images/1.png" alt="image01" /></div>
+        </div>
+        <div class="da-slide">
+          <h2>Quality Control</h2>
+          <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+          <div class="da-img"><img src="../app/assets/images/4.png" alt="image01" /></div>
+        </div>
+        <nav class="da-arrows">
+          <span class="da-arrows-prev"></span>
+          <span class="da-arrows-next"></span>
+        </nav>
+      </div>
 <div class="container-fluid">
   <div class="row-fluid">
-    <div class="span8 offset2 job-table">
-      <h3 class="jobs-caption">Your Tasks maintanince</h3>
-      <table class="table table-hover table-wrapper">
-        <tr class="table-header">
-          <td> Task Name</td>
-          <td> Progress</td>
-          <td> Status</td>
-        </tr>
-        <tr>
-          <td> Fitering index.html</td>
-          <td> 
-            <progress id="progressbar" class="progress-mini" value="0" max="100">
-            </progress>
-          </td>
-          <td> In progress..</td>
-        </tr>
-        <tr>
-          <td> Fitering index.html</td>
-          <td> 
-            <progress id="progressbar" class="progress-mini" value="0" max="100">
-            </progress>
-          </td>
-          <td> In progress..</td>
-        </tr>
-        <tr>
-          <td> Fitering index.html</td>
-          <td> 
-            <progress id="progressbar" class="progress-mini" value="0" max="100">
-            </progress>
-          </td>
-          <td> In progress..</td>
-        </tr>
-        <tr>
-          <td> Fitering index.html</td>
-          <td> 
-            <progress id="progressbar" class="progress-mini" value="0" max="100">
-            </progress>
-          </td>
-          <td> In progress..</td>
-        </tr>
-      </table>
-    </div>
+      
   </div>
 </div>
-
+<script type="text/javascript">
+  $(function() {
+  
+    $('#da-slider').cslider({
+      autoplay  : true,
+      bgincrement : 450
+    });
+  
+  });
+</script>
 </body>
+</html>

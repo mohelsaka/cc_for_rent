@@ -23,7 +23,10 @@ $(document).ready(function(){
     var animate = setInterval(function() {  
         loading();  
     }, time);  
-
+    var currentState= $('progress').val();
+    if(){
+        
+    }
 function setCurrentState(x){
 	var currentState= $('progress').val();
 	return currentState;
