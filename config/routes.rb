@@ -1,5 +1,9 @@
 CcForRent::Application.routes.draw do
-  resources :assigned_works
+  resources :assigned_works do
+    member do
+      post 'update_info'
+    end
+  end
 
   resources :pc_owners
 

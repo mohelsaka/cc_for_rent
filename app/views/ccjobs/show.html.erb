@@ -25,6 +25,24 @@
   <%= @ccjob.status %>
 </p>
 
+<div class="span8 offset2 job-table">
+  <h3 class="jobs-caption">Your Tasks maintanince</h3>
+  <table class="table table-hover table-wrapper">
+    <tr>
+      <td> Task Name</td>
+      <td> Progress</td>
+      <td> Status</td>
+    </tr>
+    <tr>
+      <td> Fitering index.html</td>
+      <td> 
+        <progress id="progressbar" class="progress-mini" value="0" max="100">
+        </progress>
+      </td>
+      <td> In progress..</td>
+    </tr>
+  </table>
+</div>
 
-<%= link_to 'Edit', edit_ccjob_path(@ccjob) %> |
+
 <%= link_to 'Back', ccjobs_path %>
